@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Section 2 Master Reference Page</title>
+    <title>Section 2 Web Design Reference</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,42 +11,81 @@
         
         <header>
             <h1>Section 2: Web Design & HTML Reference</h1>
-            <p class="subtitle">A comprehensive single-page showcase of metadata, structure, and design principles.</p>
+            <p class="subtitle">Master showcase covering metadata, semantics, typography, lists, and media.</p>
         </header>
 
-        <section class="card">
-            <h2>1. HTML Metadata Tags</h2>
-            <p>This page utilizes the following core document metadata tags inside the <code>&lt;head&gt;</code> element:</p>
-            <ul>
-                <li><strong>&lt;html&gt;</strong> — The root element enclosing the document.</li>
-                <li><strong>&lt;head&gt;</strong> — Container for document metadata.</li>
-                <li><strong>&lt;title&gt;</strong> — Sets the page title in the browser tab.</li>
-                <li><strong>&lt;meta&gt;</strong> — Provides structured metadata like charsets and viewports.</li>
-                <li><strong>&lt;link&gt;</strong> — Connects external resources like stylesheets.</li>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#metadata">Metadata</a></li>
+                <li><a href="#structure">Structure</a></li>
+                <li><a href="#lists">Lists</a></li>
+                <li><a href="#media">Media</a></li>
             </ul>
-        </section>
+        </nav>
 
-        <section class="card">
-            <h2>2. Visual Hierarchy & Typography Scale</h2>
-            <p>Using distinct font scales creates predictable reading paths across long pages.</p>
-            <h3>Subheading (H3 Example)</h3>
-            <p>Regular body text combined with bold titles separates headings from paragraphs clearly.</p>
-            <p class="sub-caption">Minor Sub-caption: Smallest heading level used for minor annotations.</p>
-        </section>
+        <main>
+            <section id="metadata" class="card">
+                <h2>1. HTML Metadata Tags</h2>
+                <p>Essential tags placed inside the &lt;head&gt; element:</p>
+                <ul>
+                    <li><strong>&lt;html&gt;</strong> — The root element enclosing the document.</li>
+                    <li><strong>&lt;head&gt;</strong> — Container for document metadata.</li>
+                    <li><strong>&lt;title&gt;</strong> — Sets the page title in the browser tab.</li>
+                    <li><strong>&lt;meta&gt;</strong> — Provides structured metadata like charsets and viewports.</li>
+                    <li><strong>&lt;link&gt;</strong> — Connects external stylesheets.</li>
+                </ul>
+            </section>
 
-        <section class="card">
-            <h2>3. Core Design Principles</h2>
-            <div class="grid-2col">
-                <div>
-                    <h3>Mobile-First Strategy</h3>
-                    <p>Designing for small screens first with fluid grids before expanding to desktop.</p>
+            <section id="structure" class="card">
+                <h2>2. Semantic HTML5 Landmarks</h2>
+                <div class="grid-2col">
+                    <div class="sub-card">
+                        <h3>Articles & Sections</h3>
+                        <p>Used to break up self-contained content and distinct thematic sections.</p>
+                    </div>
+                    <div class="sub-card">
+                        <h3>Aside Element</h3>
+                        <p>Holds tangential content related to the main page, like sidebars or tips.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>White Space & Contrast</h3>
-                    <p>Using clean whitespace and high color contrast ratios to establish visual balance.</p>
+            </section>
+
+            <section id="lists" class="card">
+                <h2>3. Lists & Terminology</h2>
+                <h3>Core Principles (Unordered List)</h3>
+                <ul>
+                    <li>Visual Clarity</li>
+                    <li>Accessibility (a11y)</li>
+                    <li>Responsive Fluidity</li>
+                    <li>Consistent Typography</li>
+                </ul>
+
+                <h3 style="margin-top: 1rem;">Design Process (Ordered List)</h3>
+                <ol style="padding-left: 1.5rem;">
+                    <li>Research user needs and target audience</li>
+                    <li>Create wireframes for information architecture</li>
+                    <li>Build high-fidelity prototypes for visual testing</li>
+                    <li>Perform usability testing and refine</li>
+                </ol>
+            </section>
+
+            <section id="media" class="card">
+                <h2>4. Embedded Media References</h2>
+                <p>Handling rich media and interactive content:</p>
+                <div class="media-grid">
+                    <div class="media-box">Images &amp; Art Direction</div>
+                    <div class="media-box">SVG Graphics</div>
+                    <div class="media-box">Dynamic Canvas</div>
+                    <div class="media-box">Native Audio &amp; Video</div>
+                    <div class="media-box">Inline Frames (&lt;iframe&gt;)</div>
+                    <div class="media-box">MathML Expressions</div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Section 2 Project — Built with mobile-first standards.</p>
+        </footer>
 
     </div>
 </body>
